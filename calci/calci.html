@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced Calculator</title>
+  <link rel="stylesheet" href="calci.css">
+</head>
+<body>
+<div id="name">@Axh404</div>
+<div class="calculator">
+  <div
+    class="display"
+    id="display"
+    contenteditable="true"
+    spellcheck="false"
+  ></div>
+
+  <div class="buttons">
+    <button class="btn operator" data-action="clear">C</button>
+    <button class="btn operator" data-key="%">%</button>
+    <button class="btn operator" data-key="/">÷</button>
+    <button class="btn operator" data-key="*">×</button>
+
+    <button class="btn" data-key="7">7</button>
+    <button class="btn" data-key="8">8</button>
+    <button class="btn" data-key="9">9</button>
+    <button class="btn operator" data-key="-">−</button>
+
+    <button class="btn" data-key="4">4</button>
+    <button class="btn" data-key="5">5</button>
+    <button class="btn" data-key="6">6</button>
+    <button class="btn operator" data-key="+">+</button>
+
+    <button class="btn" data-key="1">1</button>
+    <button class="btn" data-key="2">2</button>
+    <button class="btn" data-key="3">3</button>
+    <button class="btn equal" data-action="equals">=</button>
+
+    <button class="btn zero" data-key="0">0</button>
+    <button class="btn" data-key=".">.</button>
+    <button class="btn" data-action="backspace">⌫</button>
+  </div>
+</div>
+
+<script src="calci.js"></script>
+</body>
+</html>
