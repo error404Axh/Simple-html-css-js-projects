@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, rgb(222, 216, 216), rgb(235, 100, 192));
+  transition: background 0.3s ease;
+}
+
+.container {
+  background: white;
+  width: 380px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#themeToggle {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+/* Input */
+.input-box {
+  display: flex;
+  gap: 10px;
+}
+
+#task {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+#task:focus {
+  outline: none;
+  border-color: #e94560;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #4c4ce8;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #4ac7d0;
+  color: black;
+}
+
+/* Task list */
+.task-box {
+  margin-top: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  background: #f3f3f3;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background 0.3s ease;
+}
+
+.task-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.deletebtn {
+  background: red;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  color: white;
+  border: none;
+  cursor: pointer;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deletebtn:hover {
+  box-shadow: 0 0 10px crimson;
+}
+
+/* ---------- DARK MODE ---------- */
+body.dark {
+  background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+body.dark .container {
+  background: #1e1e1e;
+  color: #fff;
+}
+
+body.dark input {
+  background: #2c2c2c;
+  color: #fff;
+  border-color: #555;
+}
+
+body.dark li {
+  background: #2a2a2a;
+}
+
+body.dark button {
+  background: #444;
+  color: white;
+}
+
+body.dark button:hover {
+  background: #666;
+}
+
+body.dark .deletebtn {
+  background: crimson;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
